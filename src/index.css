@@ -257,5 +257,66 @@ nav .nav-btn:disabled{
 
 /* ----------chatcontainer--------- */
 .chatContainer{
-  
+  background-color: #eee;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width: 30%;
+    height: 100vh;
+    text-align: left;
+    z-index: 1;
+}
+
+.chaitContainerHeader{
+  background: linear-gradient(45deg, #fe3072, #ff5940);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chatContainer .option{
+  border: none;
+  background-color: #eee;
+  border-bottom:solid 4px red;
+  font-size: 20px;
+  margin: 2px;
+  padding: 10px;
+}
+
+.chatContainer .option:disabled{
+  border-bottom: solid 4px gray;
+}
+
+.chatContainer .profile,
+.chatContainer .logOutIcon {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #eee;
+}
+
+.imageContainer {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.imageContainer img {
+  width: 100%;
+}
+
+/*-------- Chat Display --------*/
+.chatDisplay,
+.matchesDisplay {
+    padding: 10px;
+    height: 60vh;
+    overflow-y: auto;
+}
+
+/*-------- Chat Input --------*/
+.chatInput {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 }
